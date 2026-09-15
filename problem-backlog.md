@@ -14,6 +14,8 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 | [P-001](#p-001) | Người ngồi sau xe máy: box riêng hay gộp với người lái | Guideline mơ hồ | §3.2 | ✅ Đã chốt | [QĐ-001](so-quyet-dinh.md#qđ-001) |
 | [P-002](#p-002) | Xe bị che khuất hơn một nửa | Guideline chưa nói tới | §3.4 | ↗️ Hỏi BTC | — |
 | [P-003](#p-003) | Phải vẽ lại box y hệt qua nhiều frame liên tiếp | Pain point công cụ | — | 🗣️ Đang bàn | — |
+| [P-004](#p-004) | Thành cầu được gán lable là wall hay fence | Guideline mơ hồ | — | 🗣️ Đang bàn | — |
+
 
 **Loại**
 
@@ -80,6 +82,27 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Viết script đọc file export của CVAT, nhân box sang các frame kế tiếp, rồi import lại.
 - **Kết quả:** 🗣️ Đang bàn. Nếu chọn hướng 2 thì đổi trạng thái sang 🛠️ và làm trong
   [`source-tool/`](source-tool/).
+
+  ## P-004
+
+**Tóm tắt một dòng**
+ Gán nhãn label cho thành cầu  
+- **Loại:** Guideline mơ hồ 
+- **Mục guideline:** Semantic_Segmentation_Annotation_Guideline §4.
+Cặp dễ nhầm | Quy tắc thực hành
+wall vs fence | wall thường là bề mặt kín/đặc; fence là hàng rào có cấu
+trúc thanh/lưới hoặc ranh giới dạng fence.
+- **Người phát hiện:** @Tưởng Đức Tâm · 15/09/2026
+- **Link CVAT:** (bỏ trống nếu không có)
+  - https://cvat.note.transformerlabs.ai/tasks/128/jobs/1362?frame=0 — object 8, 9
+- **Mô tả:**
+ Chưa biết gán nhãn label cho thành cầu
+- **Các cách hiểu:** 
+  1.Thành cầu kín, được gán là wall
+  2.Thành cầu thấp, đóng vai trò như hàng rào, gán là fence
+- **Xử lý tạm trong lúc chờ:**
+ Gán là fence
+- **Kết quả:** 🔴 Mở
 
 ---
 
