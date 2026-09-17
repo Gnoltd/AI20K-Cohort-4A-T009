@@ -1,9 +1,5 @@
 # Nhật ký tuần 01 · 14/09 – 20/09/2026
 
-> Dữ liệu lấy trực tiếp từ CVAT (https://cvat.note.transformerlabs.ai) lúc 17/09/2026.
-> % hoàn thành ở bảng "Công việc" lấy qua API `/api/jobs/{id}/annotations` (đếm frame
-> có object thật) — không phải số CVAT hiển thị sẵn trên UI danh sách task/job.
-
 **Lead tuần này:** Đỗ Thành Long (2A202602199, dothanhlong166@gmail.com) — assignee của task bbox/polygon #128. Tưởng Đức Tâm (2A202602249) là assignee của task segmentation #182 
 **Dữ liệu / task CVAT:** Ảnh giao thông đô thị (bbox/polygon) — [Task #128 · W1-BBOX-G2-T1](https://cvat.note.transformerlabs.ai/tasks/128)
 **Guideline áp dụng:** Annotation_Guideline_BBox_Polygon_Polyline_v1.pdf (trong Downloads)
