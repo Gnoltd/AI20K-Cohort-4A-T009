@@ -1,9 +1,5 @@
 # Nhật ký tuần 01 · 14/09 – 20/09/2026
 
-> Dữ liệu lấy trực tiếp từ CVAT (https://cvat.note.transformerlabs.ai) lúc 17/09/2026.
-> CVAT không hiển thị % hoàn thành trong khung nhìn danh sách task/job, nên các mục
-> dưới đây ghi theo *stage / state* thực tế thay vì phần trăm ước lượng.
-
 **Lead tuần này:** 2A202602199 (dothanhlong166@gmail.com) — là assignee của cả task
 **Dữ liệu / task CVAT:** Ảnh giao thông đô thị (bbox) — [Task #128 · W1-BBOX-G2-T1](https://cvat.note.transformerlabs.ai/tasks/128)
 **Guideline áp dụng:** Annotation_Guideline_BBox_Polygon_Polyline_v1.pdf (trong Downloads)
