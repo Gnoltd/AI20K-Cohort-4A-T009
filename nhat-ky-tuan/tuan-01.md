@@ -1,50 +1,44 @@
-# Nhật ký tuần 01 · 15/09 – 21/09/2026
+# Nhật ký tuần 01 · 14/09 – 20/09/2026
 
-> **File ví dụ** — tên, số liệu và link đều là giả. Tuần mới thì copy
-> [`_mau-tuan.md`](_mau-tuan.md) thành `tuan-02.md`.
+> Dữ liệu lấy trực tiếp từ CVAT (https://cvat.note.transformerlabs.ai) lúc 17/09/2026.
+> CVAT không hiển thị % hoàn thành trong khung nhìn danh sách task/job, nên các mục
+> dưới đây ghi theo *stage / state* thực tế thay vì phần trăm ước lượng.
 
-**Lead tuần này:** @thanh-vien-a
-**Dữ liệu / task CVAT:** Ảnh giao thông đô thị — [task 12](https://cvat.example.com/tasks/12)
+**Lead tuần này:** 2A202602199 (dothanhlong166@gmail.com) — là assignee của cả task
+**Dữ liệu / task CVAT:** Ảnh giao thông đô thị (bbox) — [Task #128 · W1-BBOX-G2-T1](https://cvat.note.transformerlabs.ai/tasks/128)
+**Guideline áp dụng:** Annotation_Guideline_BBox_Polygon_Polyline_v1.pdf (trong Downloads)
 
 ## Thành viên và phân công
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
-| Nguyễn Văn A (@thanh-vien-a) | Lead | Chia job, chốt edge case, review xác suất 10% mọi job |
-| Trần Thị B (@thanh-vien-b) | Annotator | Job 101, 102 |
-| Lê Văn C (@thanh-vien-c) | Annotator | Job 103, 104 |
-| Phạm Thị D (@thanh-vien-d) | Reviewer · Annotator | Review job 101–104; gán job 105 |
+| 2A202602199 (tôi) | Lead | Assignee tổng của task #128, theo dõi tiến độ 4 job |
+| 2A202602249 | Annotator | Job #1362 — frame 0–24 |
+| 2A202602074 | Annotator | Job #1363 — frame 25–49 |
+| 2A202602309 | Annotator | Job #1364 — frame 50–74 |
+| 2A202602177 | Annotator | Job #1365 — frame 75–99 |
 
-Phạm Thị D vừa review vừa gán, nên job 105 do Lead review.
+Cả 4 job hiện đều ở stage `annotation` (chưa job nào chuyển sang `validation`), nên tuần này chưa phát sinh vòng review riêng của lead.
 
 ## Công việc
 
-| # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
-|---|---|---|---|---|---|
-| 1 | Job 101 — 250 ảnh, bbox `xe_may` / `o_to` / `nguoi` | @thanh-vien-b | @thanh-vien-d | ✅ 100% | Review trả lại 12 ảnh, đã sửa xong |
-| 2 | Job 102 — 250 ảnh, cùng nhãn | @thanh-vien-b | @thanh-vien-d | 🟡 70% |  |
-| 3 | Job 103 — 250 ảnh, cùng nhãn | @thanh-vien-c | @thanh-vien-d | ⛔ 30% | Dừng, chờ chốt [P-002](../problem-backlog.md#p-002) |
-| 4 | Job 104 — 250 ảnh, cùng nhãn | @thanh-vien-c | @thanh-vien-d | ⬜ 0% | Làm sau job 103 |
-| 5 | Job 105 — 250 ảnh, cùng nhãn | @thanh-vien-d | @thanh-vien-a | 🟡 40% |  |
-| 6 | Đọc lại guideline §3, gom các ca chưa rõ | @thanh-vien-a | — | ✅ 100% | Ra P-001, P-002 |
-| 7 | Rà lại job 101 theo QĐ-001 | @thanh-vien-b | @thanh-vien-d | ✅ 100% | Sửa 37 ảnh người ngồi sau |
-
-Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) · ⛔ bị chặn (ghi lý do) · ⬜ chưa bắt đầu
+| # | Job | Annotator | Frame range | Stage / State | Cập nhật gần nhất | Ghi chú |
+|---|---|---|---|---|---|---|
+| 1 | #1362 | 2A202602249 | 0–24 (25 ảnh) | annotation · in progress | 16/09 23:27 | |
+| 2 | #1363 | 2A202602074 | 25–49 (25 ảnh) | annotation · in progress | 17/09 09:05 | |
+| 3 | #1364 | 2A202602309 | 50–74 (25 ảnh) | annotation · in progress | 17/09 09:09 | |
+| 4 | #1365 | 2A202602177 | 75–99 (25 ảnh) | annotation · in progress | 15/09 17:08 | Không có cập nhật mới nhất trong 3 job còn lại — có thể đang chậm hơn |
 
 ## Tổng kết
 
-- Đã gán: 425 / 1.250 ảnh (34%)
-- Qua review lần đầu: 88% (trả lại 51 ảnh)
-- Edge case mới: P-001, P-002, P-003 — đã chốt P-001 thành [QĐ-001](../so-quyet-dinh.md#qđ-001)
+- Task #128 (W1-BBOX-G2-T1): 100 ảnh / 4 job, mỗi job 25 ảnh.
+- Cả 4 job đều đang `annotation · in progress` — chưa job nào hoàn thành hay được đẩy sang review.
 
 ## Vướng mắc
 
-- P-002 (xe bị che khuất) chưa chốt nên job 103 phải dừng. Lead đã gửi câu hỏi lên BTC.
-- P-003: vẽ lại box y hệt qua các frame liên tiếp mất ~40% thời gian job 105.
-  Đang cân nhắc làm tool trong [`source-tool/`](../source-tool/).
+- 
 
 ## Kế hoạch tuần 02
 
-- Chốt P-002, mở lại job 103.
-- Xong job 102, 104, 105.
-- Quyết định có làm tool cho P-003 hay dùng chế độ Track sẵn có của CVAT.
+- Xong annotation, chuyển stage sang `validation` để lead review.
+- Đối chiếu case chưa rõ với Annotation_Guideline_BBox_Polygon_Polyline_v1.pdf.
