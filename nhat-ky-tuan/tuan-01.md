@@ -18,8 +18,6 @@ Cả 4 job hiện đều ở stage `annotation` (chưa job nào chuyển sang `v
 
 ## Công việc
 
-Số liệu lấy qua API `/api/jobs/{id}/annotations` (đếm số frame có ít nhất 1 object) — chính xác hơn stage/state hiển thị trên UI.
-
 | # | Job | Annotator | Frame range | Frame đã gán / tổng | % thật | Object (rect / polygon / polyline) | Ghi chú |
 |---|---|---|---|---|---|---|---|
 | 1 | #1362 | 2A202602249 | 0–24 | 9 / 25 | ⛔ 36% | 111 / 33 / 2 | Frame 1 chưa có object nào — cần kiểm tra|
