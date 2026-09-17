@@ -12,7 +12,7 @@
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
-| 2A202602199 (tôi) | Lead | Assignee tổng của task #128, theo dõi tiến độ 4 job |
+| 2A202602199 | Lead | Assignee tổng của task #128, theo dõi tiến độ 4 job |
 | 2A202602249 | Annotator | Job #1362 — frame 0–24 |
 | 2A202602074 | Annotator | Job #1363 — frame 25–49 |
 | 2A202602309 | Annotator | Job #1364 — frame 50–74 |
