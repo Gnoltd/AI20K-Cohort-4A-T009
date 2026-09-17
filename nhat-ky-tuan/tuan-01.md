@@ -33,13 +33,9 @@ Số liệu Task #128 lấy qua API `/api/jobs/{id}/annotations` (đếm số fr
 
 ## Tổng kết
 
-- **Task #128 (bbox/polygon, Long lead):** 67 / 100 ảnh đã có annotation (67%).
-- **Task #182 (segmentation, Tâm lead — chỉ liệt kê vì Long có tham gia job #1578, không thuộc phạm vi Long lead):** 42 / 100 ảnh (25+15+1+1), tức 42%.
-- Cộng cả 2 task: 109 / 200 ảnh (55%) — không tính chung vào % của task #128 vì hai task khác nhau.
-- **Đính chính so với ghi nhận trước đó (chỉ dựa vào "cập nhật gần nhất" trên UI):** job #1365 (Tùng) thực ra đã xong 100% từ 15/09, không hề chậm — job chậm nhất trong task #128 là **#1362 (Tâm), mới 36%**, dù có vẻ "mới cập nhật" (16/09 23:27). Timestamp cập nhật không phản ánh đúng tiến độ thật.
-- Job #1365 đã xong nhưng bị "kẹt" ở stage annotation — cần lead chuyển sang validation để review, không nên để tồn.
-- Job #1364 có 0 polygon dù guideline BBox/Polygon/Polyline yêu cầu cả 2 loại — cần xác nhận có object nào lẽ ra phải là polygon mà bị vẽ nhầm thành rectangle không.
-- Bên task #182 (ngoài phạm vi lead nhưng đáng chú ý): job #1580 (Hà) và #1581 (Tùng) mới 1/25 (4%) — rất chậm so với #1578 (Long, 100%) và #1579 (Minh, 60%).
+- **Task #128 (bbox/polygon):** 67 / 100 ảnh đã có annotation (67%).
+- **Task #182 (segmentation) :** 42 / 100 ảnh tức 42%.
+- Cộng cả 2 task: 109 / 200 ảnh (55%) 
 
 ## Vướng mắc
 
