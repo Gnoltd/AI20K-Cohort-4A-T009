@@ -15,8 +15,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 | [P-002](#p-002) | Xe bị che khuất hơn một nửa | Guideline chưa nói tới | §3.4 | ↗️ Hỏi BTC | — |
 | [P-003](#p-003) | Phải vẽ lại box y hệt qua nhiều frame liên tiếp | Pain point công cụ | — | 🗣️ Đang bàn | — |
 | [P-004](#p-004) | Thành cầu được gán lable là wall hay fence | Guideline mơ hồ | — | 🗣️ Đang bàn | — |
-
-
+| [P-005](#p-005) | Thành cầu được gán lable là wall hay fence | Guideline mơ hồ | — | 🗣️ Đang bàn | — || [P-005](#p-005) | Bồn hoa dải phân cách giữa 2 làn: có tính là sidewalk không | Guideline chưa nói tới | — | 🔴 Mở | — |
 **Loại**
 
 | Loại | Nghĩa là |
@@ -102,6 +101,22 @@ trúc thanh/lưới hoặc ranh giới dạng fence.
   2.Thành cầu thấp, đóng vai trò như hàng rào, gán là fence
 - **Xử lý tạm trong lúc chờ:**
  Gán là fence
+- **Kết quả:** 🔴 Mở
+
+## P-005
+
+**Bồn hoa dải phân cách giữa 2 làn — chưa rõ tính là sidewalk hay nhãn riêng**
+
+- **Loại:** Guideline chưa nói tới
+- **Mục guideline:** § — chưa có mục nào nói về dải phân cách/bồn hoa, guideline hiện chỉ định nghĩa sidewalk chung chung
+- **Người phát hiện:** @Đỗ Thành Long · 17/09/2026
+- **Link CVAT:**
+  - https://cvat.note.transformerlabs.ai/tasks/182/jobs/1578?frame=3 — bồn hoa/chậu cây trên dải phân cách giữa làn xe và vỉa hè
+- **Mô tả:** Khu vực bồn hoa (dải phân cách có chậu hoa) nằm giữa làn xe và vỉa hè — chưa rõ có tính là "sidewalk" không, hay cần tách thành nhãn riêng.
+- **Các cách hiểu:**
+  1. Gộp chung vào sidewalk vì cùng là phần không dành cho xe chạy
+  2. Tách riêng thành nhãn khác (ví dụ "median"/"vegetation") vì có chậu hoa, không phải bề mặt đi bộ thực sự
+- **Xử lý tạm trong lúc chờ:** Gán tạm là sidewalk
 - **Kết quả:** 🔴 Mở
 
 ---
