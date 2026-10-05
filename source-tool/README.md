@@ -33,7 +33,7 @@ Thêm tool thì thêm một dòng vào bảng:
 
 | Tool | Giải quyết | Người viết | Trạng thái |
 |---|---|---|---|
-| *(chưa có)* |  |  |  |
+| [cvat-3d-inspector](cvat-3d-inspector/) | Kiểm tra job 3D có đủ point cloud, ảnh camera, calib để sinh box 3D từ ảnh 2D | @ | 🧪 Thử nghiệm |
 
 ## Mẫu README cho từng tool
 

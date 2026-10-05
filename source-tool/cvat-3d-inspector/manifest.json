@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "CVAT 3D Inspector",
+  "version": "0.1.0",
+  "description": "Kiểm tra một job CVAT 3D có đủ point cloud, ảnh camera và calib để sinh box 3D từ ảnh 2D hay không.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cvat.note.transformerlabs.ai/*",
+        "https://app.cvat.ai/*"
+      ],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
